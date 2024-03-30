@@ -42,19 +42,19 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                 &tog 1                                                                                              &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T                  &none                                                                                              &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G                  &none             &kp LCTRL  &kp LALT                   &kp LGUI                  &kp RCTRL        &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G                  &none     &macro_screenshot  &kp LALT                   &kp LGUI                  &kp RCTRL        &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                               &kp HOME                  &kp PG_UP                                           &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &lt 1 ENTER  &mt LEFT_CONTROL TAB   &kp END                  &kp PG_DN  &mt BACKSPACE RIGHT_SHIFT  &lt 4 SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &lt 1 ENTER  &mt LEFT_CONTROL TAB   &kp END                  &kp PG_DN  &mt RIGHT_SHIFT BACKSPACE  &lt 4 SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
         layer_keypad {
             bindings = <
- &kp EQUAL           &kp N1            &kp N2             &kp N3                &kp N4                 &kp N5            &trans                                                                                 &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB  &kp EXCLAMATION       &kp AT_SIGN           &kp HASH            &kp DOLLAR            &kp PERCENT             &none                                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC        &kp CARET     &kp AMPERSAND           &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS             &none  &kp LCTRL  &kp LALT                   &kp LGUI                  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
- &kp LSHFT   &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp LEFT_BRACE        &kp RIGHT_BRACE                               &kp HOME                  &kp PG_UP                                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2        &kp GRAVE          &kp CAPS           &kp LEFT             &kp RIGHT                                    &none      &none   &kp END                  &kp PG_DN  &mt BACKSPACE RIGHT_SHIFT  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
+ &kp EQUAL           &kp N1            &kp N2             &kp N3                &kp N4                 &kp N5                            &trans                                                                                         &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+   &kp TAB  &kp EXCLAMATION       &kp AT_SIGN           &kp HASH            &kp DOLLAR            &kp PERCENT                             &none                                                                                         &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
+   &kp ESC        &kp CARET     &kp AMPERSAND           &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS            &macro_string_parenths  &macro_screenshot  &kp LALT                   &kp LGUI                  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
+ &kp LSHFT   &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp LEFT_BRACE        &kp RIGHT_BRACE                                                       &kp HOME                  &kp PG_UP                                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
+     &mo 2        &kp GRAVE          &kp CAPS           &kp LEFT             &kp RIGHT                                                    &none              &none   &kp END                  &kp PG_DN  &mt RIGHT_SHIFT BACKSPACE  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
             >;
         };
 
@@ -80,11 +80,11 @@
 
         layer_moving {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                   &none   &none     &none           &none      &none          &none   &none
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                   &none   &none     &none    &kp UP_ARROW      &none          &none   &none
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans   &none   &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT    &kp PAGE_UP   &none
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                   &none  &kp HOME           &none    &kp END  &kp PAGE_DOWN   &none
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans             &none           &none      &none          &none   &none
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                   &none   &none     &none           &none      &none       &none   &none
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                   &none   &none     &none    &kp UP_ARROW      &none  &kp DELETE   &none
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans   &none   &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp ESCAPE   &none
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                   &none  &kp HOME           &none    &kp END       &none   &none
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans             &none           &none      &none       &none   &none
             >;
         };
 
