@@ -94,11 +94,11 @@
 
         layer_moving {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                          &none   &none          &none     &none           &none      &none       &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                          &none   &none          &kp HOME  &kp UP_ARROW    &kp END    &kp DELETE  &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans              &trans      &trans  &trans  &none   &kp PAGE_UP    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp ESCAPE  &none
-&trans  &trans  &trans  &trans  &trans  &trans                                      &trans      &trans                  &kp PAGE_DOWN  &kp HOME  &none           &kp END    &none       &none
-&trans  &trans  &trans  &trans  &trans          &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)  &trans      &trans  &trans  &trans                 &none     &none           &none      &none       &none
+&trans  &trans  &trans  &trans  &trans           &trans       &trans                                                          &none   &none          &none     &none           &none      &none       &none
+&trans  &trans  &trans  &trans  &trans           &trans       &trans                                                          &none   &none          &kp HOME  &kp UP_ARROW    &kp END    &kp DELETE  &none
+&trans  &trans  &trans  &trans  &kp LC(LS(TAB))  &kp LC(TAB)  &trans          &trans              &trans      &trans  &trans  &none   &kp PAGE_UP    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp ESCAPE  &none
+&trans  &trans  &trans  &trans  &trans           &trans                                           &trans      &trans                  &kp PAGE_DOWN  &kp HOME  &none           &kp END    &none       &none
+&trans  &trans  &trans  &trans  &trans                        &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)  &trans      &trans  &trans  &trans                 &none     &none           &none      &none       &none
             >;
         };
     };
