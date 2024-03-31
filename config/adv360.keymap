@@ -36,7 +36,7 @@
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT BACKSPACE>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
