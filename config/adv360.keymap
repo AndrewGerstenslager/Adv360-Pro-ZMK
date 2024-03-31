@@ -35,6 +35,8 @@
             label = "BACKSPACE";
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT BACKSPACE>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <100>;
         };
     };
 
