@@ -94,15 +94,15 @@
 
         layer_moving {
             bindings = <
-&trans  &trans  &trans                  &trans       &trans             &trans  &trans                                                            &none   &none          &none     &none           &none      &none       &none
-&trans  &trans  &trans                  &kp LG(TAB)  &trans             &trans  &trans                                                            &none   &none          &kp HOME  &kp UP_ARROW    &kp END    &kp DELETE  &none
-&trans  &trans  &kp LG(LC(LEFT_ARROW))  &kp ESCAPE   &kp LG(LC(RIGHT))  &none   &trans          &trans  &trans                    &trans  &trans  &none   &kp PAGE_UP    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp ESCAPE  &none
-&trans  &trans  &trans                  &trans       &trans             &trans                          &kp LG(LEFT_CONTROL)      &trans                  &kp PAGE_DOWN  &kp HOME  &none           &kp END    &none       &none
-&trans  &trans  &trans                  &trans       &trans                     &kp LEFT_SHIFT  &trans  &kp LC(LEFT_SHIFT)        &trans  &trans  &trans                 &none     &none           &none      &none       &none
+&trans  &trans  &trans                  &trans       &trans             &trans  &trans                                                            &none   &none           &none           &none         &none      &none       &none
+&trans  &trans  &trans                  &kp LG(TAB)  &trans             &trans  &trans                                                            &none   &none           &kp HOME        &none         &kp END    &kp DELETE  &none
+&trans  &trans  &kp LG(LC(LEFT_ARROW))  &kp LA(TAB)  &kp LG(LC(RIGHT))  &none   &trans          &trans  &trans                    &trans  &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp ESCAPE  &none
+&trans  &trans  &trans                  &trans       &trans             &trans                          &kp LG(LEFT_CONTROL)      &trans                  &none           &kp HOME        &none         &kp END    &none       &none
+&trans  &trans  &trans                  &trans       &trans                     &kp LEFT_SHIFT  &trans  &kp LC(LEFT_SHIFT)        &trans  &trans  &trans                  &none           &none         &none      &none       &none
             >;
         };
 
-        layer_5 {
+        layer_gaming {
             bindings = <
 &trans  &trans          &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp ESCAPE      &kp Q   &kp W   &kp E   &kp R   &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
